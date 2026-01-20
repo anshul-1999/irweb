@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h2>Index a New Page</h2>
+    <form method="POST">
+        <p><input type="text" name="title" placeholder="Page Title" required style="width:100%"></p>
+        <p><input type="text" name="url" placeholder="http://example.com" required style="width:100%"></p>
+        <p><textarea name="content" placeholder="Paste page content here..." rows="10" required style="width:100%"></textarea></p>
+        <button type="submit">Add to Index</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>Python Search</h1>
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search the web..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Search Engine</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        input[type="text"] { width: 70%; padding: 10px; font-size: 16px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        .result { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .result a { font-size: 18px; text-decoration: none; color: #1a0dab; }
+        .url { color: #006621; font-size: 14px; }
+        .snippet { color: #545454; font-size: 14px; }
+        nav { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Search</a> | <a href="/add">Add Page</a>
+    </nav>
+    {% block body %}{% endblock %}
+</body>
+</html>

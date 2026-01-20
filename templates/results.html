@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h2>Results for "{{ query }}"</h2>
+    <hr>
+    {% if not results %}
+        <p>No results found.</p>
+    {% else %}
+        {% for res in results %}
+            <div class="result">
+                <a href="{{ res.url }}">{{ res.title }}</a>
+                <div class="url">{{ res.url }}</div>
+                <div class="snippet">...{{ res.snippet|safe }}...</div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
